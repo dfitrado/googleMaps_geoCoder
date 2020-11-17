@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="245dp"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/idGo"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_toEndOf="@+id/idZoom"
+        android:text="Go" />
+
+    <EditText
+        android:id="@+id/idLokasiLat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Lattitude..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idLokasiLng"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Longitude..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idZoom"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="Zoom..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idNamaDaerah"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:hint="Nama Daerah"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/idCari"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="175dp"
+        android:text="Cari" />
+
+</RelativeLayout>
